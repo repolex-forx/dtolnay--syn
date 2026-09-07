@@ -1,0 +1,59 @@
+[2026-09-07T13:58:45Z] === ENRICH ITERATION 1 START | repo=dtolnay/syn sha=7bcb37cd ===
+[2026-09-07T13:58:45Z] [iter=1] PHASE START: enrich repo=dtolnay/syn sha=7bcb37cd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/7bcb37cd-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/7bcb37cdb3399977658c8b52d2441d37e42e48f2.nq.gz
+[2026-09-07T13:58:59Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-09-07T13:59:21Z] [iter=1] AST store loaded triples=2870008 load_secs=20 mem_mb=853 MB
+[2026-09-07T13:59:21Z] [iter=1] Step 2: Finding LSP targets mem_mb=853 MB
+[2026-09-07T13:59:28Z] [iter=1] LSP targets found call_sites=21415 imports=0 extends=0 implements=312 secs=7
+[2026-09-07T13:59:34Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=853 MB
+[2026-09-07T13:59:49Z] [iter=1] Position index built positions=199536 nodes_with_types=236117 secs=15 mem_mb=853 MB
+[2026-09-07T13:59:49Z] [iter=1] Step 3: Starting LSP resolution mem_mb=853 MB already_completed_types=[] already_completed_files=0
+[2026-09-07T13:59:49Z] [iter=1] Resolving target type target_type=call_site count=21415
+[2026-09-07T14:00:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.9 files_done=0 resolved=0 errors=0 current=src/punctuated.rs
+[2026-09-07T14:02:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.8 files_done=1 resolved=172 errors=75 current=src/gen/visit.rs
+[2026-09-07T14:10:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=3 resolved=259 errors=460 current=src/path.rs
+[2026-09-07T14:14:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.4 files_done=4 resolved=329 errors=658 current=src/expr.rs
+[2026-09-07T14:34:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.5 files_done=5 resolved=645 errors=1663 current=src/gen/visit_mut.rs
+[2026-09-07T14:53:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.5 files_done=7 resolved=769 errors=2613 current=src/gen/debug.rs
+[2026-09-07T14:57:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=59.0 files_done=8 resolved=1911 errors=2836 current=tests/debug/gen.rs
+[2026-09-07T15:13:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.6 files_done=9 resolved=3798 errors=3616 current=codegen/src/version.rs
+[2026-09-07T15:28:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.5 files_done=11 resolved=4126 errors=4363 current=src/gen/hash.rs
+[2026-09-07T15:34:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=12 resolved=4634 errors=4672 current=tests/common/eq.rs
+[2026-09-07T15:40:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.0 files_done=14 resolved=4739 errors=4993 current=tests/test_expr.rs
+[2026-09-07T15:41:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.7 files_done=15 resolved=4821 errors=5028 current=codegen/src/main.rs
+[2026-09-07T15:53:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.1 files_done=17 resolved=5140 errors=5643 current=src/pat.rs
+[2026-09-07T15:59:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.3 files_done=18 resolved=5248 errors=5901 current=tests/test_precedence.rs
+[2026-09-07T15:59:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.8 files_done=21 resolved=5301 errors=5929 current=src/parse.rs
+[2026-09-07T16:01:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.5 files_done=22 resolved=5357 errors=6010 current=codegen/src/eq.rs
+[2026-09-07T16:03:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.1 files_done=24 resolved=5390 errors=6139 current=src/data.rs
+[2026-09-07T16:05:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.3 files_done=25 resolved=5406 errors=6200 current=src/lit.rs
+[2026-09-07T16:08:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.2 files_done=26 resolved=5659 errors=6395 current=src/stmt.rs
+[2026-09-07T16:12:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=133.5 files_done=27 resolved=5690 errors=6559 current=src/buffer.rs
+[2026-09-07T16:13:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.6 files_done=28 resolved=5748 errors=6613 current=src/meta.rs
+[2026-09-07T16:14:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.8 files_done=30 resolved=5772 errors=6675 current=codegen/src/debug.rs
+[2026-09-07T16:17:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.3 files_done=36 resolved=5931 errors=6791 current=tests/test_attribute.rs
+[2026-09-07T16:18:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.9 files_done=41 resolved=5983 errors=6870 current=src/attr.rs
+[2026-09-07T16:20:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.6 files_done=42 resolved=6039 errors=6959 current=tests/test_derive_input.rs
+[2026-09-07T16:20:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.1 files_done=44 resolved=6086 errors=6984 current=src/thread.rs
+[2026-09-07T16:22:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.3 files_done=46 resolved=6115 errors=7044 current=src/token.rs
+[2026-09-07T16:22:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.1 files_done=47 resolved=6162 errors=7082 current=tests/test_ty.rs
+[2026-09-07T16:23:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.9 files_done=48 resolved=6236 errors=7119 current=src/mac.rs
+[2026-09-07T16:24:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.5 files_done=50 resolved=6254 errors=7153 current=tests/test_round_trip.rs
+[2026-09-07T16:25:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.3 files_done=55 resolved=6333 errors=7190 current=tests/test_generics.rs
+[2026-09-07T16:25:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.1 files_done=57 resolved=6461 errors=7232 current=tests/test_item.rs
+[2026-09-07T16:26:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.9 files_done=61 resolved=6591 errors=7272 current=codegen/src/visit.rs
+[2026-09-07T16:27:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.8 files_done=67 resolved=6642 errors=7313 current=codegen/src/css.rs
+[2026-09-07T16:28:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.5 files_done=71 resolved=6674 errors=7350 current=src/ext.rs
+[2026-09-07T16:29:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.3 files_done=74 resolved=6730 errors=7392 current=tests/test_grouping.rs
+[2026-09-07T16:29:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.2 files_done=78 resolved=6761 errors=7433 current=src/bigint.rs
+[2026-09-07T16:30:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.7 files_done=86 resolved=6855 errors=7462 current=tests/test_token_trees.rs
+[2026-09-07T16:31:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=152.4 files_done=93 resolved=6873 errors=7495 current=src/restriction.rs
+[2026-09-07T16:31:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=153.1 files_done=94 resolved=6883 errors=7529 current=dev/main.rs
+[2026-09-07T16:32:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=153.8 files_done=97 resolved=6931 errors=7564 current=src/ident.rs
+[2026-09-07T16:33:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.5 files_done=102 resolved=6967 errors=7601 current=src/print.rs
+[2026-09-07T16:33:36Z] [iter=1] Target type resolved target_type=call_site resolved=7009 errors=7615 secs=9227 mem_mb=853 MB
+[2026-09-07T16:33:36Z] [iter=1] Resolving target type target_type=implements_clause count=312
+[2026-09-07T16:33:48Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=155.0 files_done=0 resolved=0 errors=0 current=src/gen/hash.rs
+[2026-09-07T16:34:10Z] [iter=1] Target type resolved target_type=implements_clause resolved=292 errors=0 secs=35 mem_mb=853 MB
+[2026-09-07T16:34:49Z] [iter=1] Step 5: Writing final enrichment file triples=130801
+[2026-09-07T16:34:52Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/7bcb37cdb3399977658c8b52d2441d37e42e48f2.nq.gz size_kb=2463
+[2026-09-07T16:34:52Z] [iter=1] PHASE END: enrich elapsed_s=9366 elapsed_min=156.1 total_triples=130801
